@@ -26,9 +26,10 @@ node scripts/rpc-health-check.mjs --rpc <RPC_URL> --json
 Interpretation:
 
 - `healthOk=false`: endpoint is not healthy enough for production sends.
-- `latencyMs > 800`: acceptable for some reads, risky for time-sensitive sends.
-- `slotLag` compared to another endpoint: if one endpoint is consistently behind, avoid it for confirmation.
-- `tpsSample=0`: performance sample request failed or endpoint is degraded.
+- `maxLatencyMs > 1000`: the script reports the endpoint as slow; it may still be acceptable for non-critical reads but is risky for time-sensitive sends.
+- `slot`: compare this value across endpoint results; an endpoint that is consistently behind should not be preferred for confirmation.
+- `performanceSamples=null`: the performance sample request failed. A value of `0` is valid and means the endpoint returned an empty sample list.
+- `averageTps`: average transactions per second across the returned performance samples; it is `null` when no samples are available.
 
 ## Failure Classes
 

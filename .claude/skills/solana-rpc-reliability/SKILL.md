@@ -1,6 +1,6 @@
 ---
 name: solana-rpc-reliability
-description: Diagnose and improve Solana RPC, transaction send, confirmation, priority fee, blockhash expiry, endpoint failover, and production transaction reliability. Use when Codex is debugging flaky Solana dapps, wallets, bots, indexers, or backend send flows; designing reliable broadcast/confirm logic; comparing RPC providers; or adding monitoring for slot lag, health, latency, and transaction landing failures.
+description: Diagnose and improve Solana RPC, transaction send, confirmation, priority fee, blockhash expiry, endpoint failover, and production transaction reliability. Use when debugging flaky Solana dapps, wallets, bots, indexers, or backend send flows; designing reliable broadcast/confirm logic; comparing RPC providers; or adding monitoring for slot lag, health, latency, and transaction landing failures.
 ---
 
 # Solana RPC Reliability
