@@ -63,7 +63,10 @@
     "csharp-lsp@claude-plugins-official": true
   },
 
-  "includeCoAuthoredBy": false,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
 
   "permissions": {
     "allow": [
